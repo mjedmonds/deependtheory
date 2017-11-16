@@ -5,20 +5,77 @@
     <meta charset="utf-8">
     <title>Deep End Theory</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        /* Add a hover effect  */
+
+        .social-media-list li:hover {
+            opacity: 0.7;
+        }
+
+        .nav-container2 {
+            width: 940px;
+            margin: auto;
+            height: 30px;
+        }
+
+        .social-media-list {
+            width: 393px;
+        }
+
+        .social-media-list li {
+            display: block;
+            float: left;
+            width: 33.3%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+    </style>
 </head>
 
 <body>
     <h1>Deep End Theory</h1>
-
     <!--    Main Section    -->
-    <iframe width="50%" height="600" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/307546438&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+    
+    <script type="text/javascript" src="path/to/instafeed.min.js"></script>
+    
+    
+    <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'YOUR_CLIENT_ID'
+    });
+    feed.run();
+</script>
+    
+    
+    
+    <div class="row">
+        <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
 
-    <h3>Find us at:</h3>
-
-    <!--    SC icon-->
-    <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fdeependtheory&color=orange_transparent&size=48" style="width: 50px; height: 50px;"></iframe>
-
-    <!--    Stitcher icon   -->
-    <a href="https://www.stitcher.com/s?fid=158352&refid=stpr"><img src="https://secureimg.stitcher.com/promo.assets/stitcher-icon-50x50.jpg" width="50" height="50" alt="Listen to Stitcher"></a>
+            <iframe width="50%" height="600" scrolling="no" align="middle" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/307546438&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+        </div>
+    </div>
+    <h3 >Find us at:</h3>
+    <div class="row">
+        <ul class="social-media-list center-block">
+            
+            <li>
+                <!--    SC icon         -->
+                <iframe allowtransparency="true" scrolling="no" margin-top="100px" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fdeependtheory&color=orange_transparent&size=48" style="width: 50px; height: 50px;"></iframe>
+            </li>
+            <li>
+                <!--    Stitcher icon   -->
+                <a href="https://www.stitcher.com/s?fid=158352&refid=stpr"><img src="https://secureimg.stitcher.com/promo.assets/stitcher-icon-50x50.jpg" width="50" height="50" alt="Listen to Stitcher"></a>
+            </li>
+            <li>
+                <!--    Youtube         -->
+                <script src="https://apis.google.com/js/platform.js"></script>
+                <div class="g-ytsubscribe" data-channelid="UCzhGfP4l8NFDQXwUqGoAgGQ" data-layout="default" data-count="default"></div>
+            </li>
+        </ul>
+    </div>
 </body>
+
 </html>
